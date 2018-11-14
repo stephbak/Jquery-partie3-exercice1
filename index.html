@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+      <script src="jquery-3.2.1.js"></script>
+    <title>Jquery parti 3</title>
+  </head>
+  <body>
+<button type="button" name="button" id="clickNumber">clik here</button>
+<input type="text" name="clickNumber" value="0" id="number">
+<script>
+$(function(){
+$('#clickNumber').click(function(){//au clic sur le bouton
+  var number = $('#number').val();//je récupère la valeur de l'input
+ number ++;//je l'incrémente
+ $('#number').val(number);//je lui réattribut la nouvelle valeure
+})
+});
+</script>
+  </body>
+</html>
